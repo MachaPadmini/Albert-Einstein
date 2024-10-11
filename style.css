@@ -1,0 +1,319 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: #c5cbe8;
+  grid-template-areas:
+    "nav nav nav nav nav nav"
+    " banimg banimg ban ban ban ban"
+    "about about about about about about"
+    "exp exp exp exp exp exp"
+    " pubhead pubhead pubhead pubhead pubhead pubhead"
+    "pub1 pub2 pub3 pub4 pub5 pub6"
+    " hobhead hobhead hobhead hobhead hobhead hobhead"
+    "hob1 hob1 hob2 hob2 hob3 hob3"
+    "imghead imghead imghead imghead imghead imghead"
+    "img1 img2 img3 img4 img5 img6"
+    "blogs blogs blogs blogs blogs blogs"
+    "footer footer footer footer footer footer";
+}
+
+.nav {
+  grid-area: nav;
+  text-align: right;
+  border-bottom: 2px;
+  background-color: rgb(217, 181, 181);
+  margin-bottom: 2px;
+  a {
+    margin: 10px;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  h3 {
+    float: left;
+    margin: 0px;
+    font-size: 25px;
+  }
+}
+.bannerimg {
+  text-align: center;
+  grid-area: banimg;
+  border-bottom: 2px;
+  background: linear-gradient(to right, rgb(213, 147, 147), rgb(172, 172, 204));
+  margin-bottom: 2px;
+  img {
+    width: 175px;
+    margin: 20px;
+  }
+}
+.banner {
+  text-align: right;
+  padding: 20px;
+  padding-bottom: 10px;
+  grid-area: ban;
+  border-bottom: 2px;
+  background: linear-gradient(to right, rgb(174, 217, 226), rgb(172, 204, 181),rgb(204, 172, 202));
+  margin-bottom: 2px;
+  h1 {
+    font-size: 70px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+}
+
+.about {
+  grid-area: about;
+  border-bottom: 2px;
+  padding: 20px;
+  padding-top: 10px;
+  background:rgb(195, 195, 224);
+  margin-bottom: 2px;
+}
+.Experience {
+  grid-area: exp;
+  border-bottom: 2px;
+  padding: 20px;
+  padding-top: 10px;
+  background:#D3D3D3;
+  margin-bottom: 2px;
+  img{
+    width: 120px;
+    height: 120px;
+    float: inline-start;
+    margin-right: 10px;
+  }
+  a{
+  width: 90%;
+  float: inline-start;  
+  }
+}
+
+
+#pubhead {
+  grid-area: pubhead;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin: 0px;
+  background-color: rgb(191, 203, 184);
+}
+.publication {
+  border-bottom: 2px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(191, 203, 184);
+  margin-bottom: 2px;
+  img {
+    width: 200px;
+    height: 150px;
+  }
+  a {
+    float: inline-start;
+    text-align: justify;
+  }
+}
+#pub1 {
+  grid-area: pub1;
+}
+#pub2 {
+  grid-area: pub2;
+}
+#pub3 {
+  grid-area: pub3;
+}
+#pub4 {
+  grid-area: pub4;
+}
+#pub5 {
+  grid-area: pub5;
+}
+#pub6 {
+  grid-area: pub6;
+}
+
+#hobhead {
+  grid-area: hobhead;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin: 0px;
+  background-color: rgb(222, 223, 210);
+}
+
+.hobby {
+  border-bottom: 2px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(222, 223, 210);
+  margin-bottom: 2px;
+  img {
+    width: 300px;
+    height: 200px;
+  }
+  a {
+    text-align: justify;
+    float: inline-start;
+  }
+}
+
+#hob1 {
+  grid-area: hob1;
+}
+#hob2 {
+  grid-area: hob2;
+}
+#hob3 {
+  grid-area: hob3;
+}
+
+#im {
+  grid-area: imghead;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin: 0px;
+  background-color: #c8d5d2;
+  
+}
+.imagecollection {
+  border-bottom: 2px;
+  padding: 20px;
+  background-color: #c8d5d2;
+  margin-bottom: 2px;
+  img {
+    width: 500px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 100%; 
+  }
+  a {
+    text-align: justify;
+    float: inline-start;
+    text-align: center;
+  }
+}
+
+#img1 {
+  grid-area: img1;
+}
+#img2 {
+  grid-area: img2;
+}
+#img3 {
+  grid-area: img3;
+}
+#img4 {
+  grid-area: img4;
+}
+#img5 {
+  grid-area: img5;
+}
+#img6 {
+  grid-area: img6;
+}
+
+.blogs {
+  grid-area: blogs;
+  border-bottom: 2px;
+  padding: 5px;
+  background-color: rgb(226, 228, 197);
+  margin-bottom: 2px;
+  padding-left: 20px;
+}
+.blog {
+  margin: 20px;
+  img {
+    width: 100px;
+    height: 100px;
+    float: inline-start;
+    margin-right: 20px;
+  }
+  a {
+    width: 90%;
+  }
+}
+footer {
+  grid-area: footer;
+  padding: 10px 0 10px 35%;
+  background-color: rgb(223, 172, 177);
+  img {
+    width: 25px;
+    margin-left: 100px;
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "banimg"
+      "ban"
+      "about"
+      "exp"
+      "pubhead"
+      "pub1"
+      "pub2"
+      "pub3"
+      "pub4"
+      "pub5"
+      "pub6"
+      "hobhead"
+      "hob1"
+      "hob2"
+      "hob3"
+      "imghead"
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5"
+      "img6"
+      "blogs"
+      "footer";
+  }
+
+  .bannerimg {
+    border: none;
+  }
+  .banner {
+    text-align: center;
+  }
+  .publication {
+    border: none;
+  }
+  #pub6 {
+    border-bottom: 2px solid black;
+  }
+  .hobby {
+    border: none;
+  }
+  #hob3 {
+    border-bottom: 2px solid black;
+  }
+  .imagecollection {
+    border: none;
+  }
+  #img6 {
+    border-bottom: 2px solid black;
+  }
+  .blog {
+    text-align: center;
+    img {
+      width: 75px;
+      float: none;
+    }
+    a {
+      float: inline-start;
+      text-align: justify;
+    }
+  }
+
+  footer {
+    padding-left: 25%;
+    img {
+      margin-left: 30px;
+    }
+  }
+}
